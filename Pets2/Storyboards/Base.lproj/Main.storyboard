@@ -95,7 +95,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZBP-X7-qdg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Tof-gC-wvc">
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="Tof-gC-wvc">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3XW-zB-2Tf">
                             <connections>
                                 <action selector="saveButtonWasTapped:" destination="Txo-jB-biI" id="yaQ-yZ-VR1"/>
@@ -116,8 +116,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AxQ-0g-PJF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BtN-lt-RyU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BtN-lt-RyU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
