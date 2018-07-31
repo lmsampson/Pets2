@@ -45,6 +45,14 @@ class PetsTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let pet = petController.pets[indexPath.row]
+            petController.deletePet(pet: pet)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     let petController = PetController()
     
 }

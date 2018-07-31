@@ -35,5 +35,11 @@ class PetController {
         }
     }
     
+    func deletePet(pet: Pet) {
+        if let index = pets.index(of: pet) {
+            pets.remove(at: index)
+        }
+    }
+    
     private(set) var pets: [Pet] = []
 }
