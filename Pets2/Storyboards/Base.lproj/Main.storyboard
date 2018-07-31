@@ -72,12 +72,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iyj-8X-cpt">
+                                <rect key="frame" x="16" y="184" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I had this pet!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-dl-Uft">
+                                <rect key="frame" x="71" y="189" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bm8-dl-Uft" firstAttribute="leading" secondItem="iyj-8X-cpt" secondAttribute="trailing" constant="6" id="C4y-l9-CO3"/>
                             <constraint firstItem="KlG-Et-dc1" firstAttribute="leading" secondItem="VlP-DX-H2k" secondAttribute="leadingMargin" id="QLg-7s-uVd"/>
+                            <constraint firstItem="iyj-8X-cpt" firstAttribute="leading" secondItem="KlG-Et-dc1" secondAttribute="leading" id="Qrv-9p-dK8"/>
                             <constraint firstItem="KlG-Et-dc1" firstAttribute="top" secondItem="ZBP-X7-qdg" secondAttribute="top" constant="82" id="YpC-V1-9jQ"/>
+                            <constraint firstItem="iyj-8X-cpt" firstAttribute="centerY" secondItem="bm8-dl-Uft" secondAttribute="centerY" id="bhz-6V-s0e"/>
+                            <constraint firstItem="bm8-dl-Uft" firstAttribute="trailing" secondItem="KlG-Et-dc1" secondAttribute="trailing" id="kWx-QJ-AEs"/>
                             <constraint firstItem="KlG-Et-dc1" firstAttribute="trailing" secondItem="VlP-DX-H2k" secondAttribute="trailingMargin" id="nGh-20-DrE"/>
+                            <constraint firstItem="iyj-8X-cpt" firstAttribute="top" secondItem="KlG-Et-dc1" secondAttribute="bottom" constant="8" symbolic="YES" id="tBs-bW-cQb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZBP-X7-qdg"/>
                     </view>
@@ -90,6 +104,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="favoritePetTextField" destination="KlG-Et-dc1" id="2ju-XR-LI9"/>
+                        <outlet property="wantPetSwitch" destination="iyj-8X-cpt" id="uqK-HT-9J4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3d-MD-MJO" userLabel="First Responder" sceneMemberID="firstResponder"/>

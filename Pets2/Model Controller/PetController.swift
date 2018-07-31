@@ -10,20 +10,29 @@ import Foundation
 
 class PetController {
     
-    func createPet(favoritePet: String) -> Pet {
-        let pet = Pet(favoritePet: favoritePet)
-        pets.append(pet)
+    func createPet(favoritePet: String, wantPet: Bool) -> Pet {
+        let pet = Pet(favoritePet: favoritePet, wantPet: wantPet)
+        if wantPet == true {
+            pets.insert(pet, at: 0)
+        } else {
+            pets.append(pet)
+        }
         return pet
     }
     
-    func updatePet(pet: Pet, favoritePet: String) {
+    func updatePet(pet: Pet, favoritePet: String, wantPet: Bool) {
         guard let index = pets.index(of: pet) else { return }
         
         var scratch = pet
         scratch.favoritePet = favoritePet
+        scratch.wantPet = wantPet
         
         pets.remove(at: index)
-        pets.append(scratch)
+        if wantPet == true {
+            pets.insert(scratch, at: 0)
+        } else {
+            pets.append(scratch)
+        }
     }
     
     private(set) var pets: [Pet] = []

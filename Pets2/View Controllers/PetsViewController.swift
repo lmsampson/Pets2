@@ -18,7 +18,13 @@ class PetsViewController: UIViewController {
     
     @IBAction func saveButtonWasTapped(_ sender: Any) {
         guard let favoritePet = favoritePetTextField.text else { return }
-        let _ = petController?.createPet(favoritePet: favoritePet)
+        let wantPet = wantPetSwitch.isOn
+        
+        if let pet = pet {
+            petController?.updatePet(pet: pet, favoritePet: favoritePet, wantPet: wantPet)
+        } else {
+            let _ = petController?.createPet(favoritePet: favoritePet, wantPet: wantPet)
+        }
     }
     
     private func updateViews() {
@@ -30,10 +36,12 @@ class PetsViewController: UIViewController {
         title = pet.favoritePet
         
         favoritePetTextField.text = pet.favoritePet
+        wantPetSwitch.isOn = pet.wantPet
     }
 
     var pet: Pet?
     var petController: PetController?
     
     @IBOutlet weak var favoritePetTextField: UITextField!
+    @IBOutlet weak var wantPetSwitch: UISwitch!
 }

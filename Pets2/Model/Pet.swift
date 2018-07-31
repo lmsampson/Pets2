@@ -11,4 +11,5 @@ import Foundation
 
 struct Pet: Equatable {
     var favoritePet: String
+    var wantPet: Bool
 }
