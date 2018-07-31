@@ -25,6 +25,8 @@ class PetsViewController: UIViewController {
         } else {
             let _ = petController?.createPet(favoritePet: favoritePet, wantPet: wantPet)
         }
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func updateViews() {

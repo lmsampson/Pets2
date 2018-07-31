@@ -98,7 +98,7 @@
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="Tof-gC-wvc">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3XW-zB-2Tf">
                             <connections>
-                                <action selector="saveButtonWasTapped:" destination="Txo-jB-biI" id="yaQ-yZ-VR1"/>
+                                <action selector="saveButtonWasTapped:" destination="Txo-jB-biI" id="dSQ-YP-gpC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
