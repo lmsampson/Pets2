@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF6050D02110EFB000383F6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6050CF2110EFB000383F6C /* AppDelegate.swift */; };
+		FF6050D52110EFB000383F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6050D32110EFB000383F6C /* Main.storyboard */; };
+		FF6050D72110EFB000383F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6050D62110EFB000383F6C /* Assets.xcassets */; };
+		FF6050DA2110EFB000383F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6050D82110EFB000383F6C /* LaunchScreen.storyboard */; };
+		FF6050E22110F03400383F6C /* PetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6050E12110F03400383F6C /* PetsTableViewController.swift */; };
+		FF6050E42110F06F00383F6C /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6050E32110F06F00383F6C /* PetsViewController.swift */; };
+		FF6050E62110F07B00383F6C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6050E52110F07B00383F6C /* Pet.swift */; };
+		FF6050E82110F08700383F6C /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6050E72110F08700383F6C /* PetController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF6050CC2110EFB000383F6C /* Pets2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pets2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6050CF2110EFB000383F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF6050D42110EFB000383F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF6050D62110EFB000383F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF6050D92110EFB000383F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF6050DB2110EFB000383F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6050E12110F03400383F6C /* PetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewController.swift; sourceTree = "<group>"; };
+		FF6050E32110F06F00383F6C /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
+		FF6050E52110F07B00383F6C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		FF6050E72110F08700383F6C /* PetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF6050C92110EFB000383F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF6050C32110EFB000383F6C = {
+			isa = PBXGroup;
+			children = (
+				FF6050CE2110EFB000383F6C /* Pets2 */,
+				FF6050CD2110EFB000383F6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF6050CD2110EFB000383F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050CC2110EFB000383F6C /* Pets2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6050CE2110EFB000383F6C /* Pets2 */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050E92110F09200383F6C /* Model */,
+				FF6050EA2110F09900383F6C /* Model Controller */,
+				FF6050EB2110F0A700383F6C /* View Controllers */,
+				FF6050EC2110F0B500383F6C /* Storyboards */,
+				FF6050CF2110EFB000383F6C /* AppDelegate.swift */,
+				FF6050D62110EFB000383F6C /* Assets.xcassets */,
+				FF6050D82110EFB000383F6C /* LaunchScreen.storyboard */,
+				FF6050DB2110EFB000383F6C /* Info.plist */,
+			);
+			path = Pets2;
+			sourceTree = "<group>";
+		};
+		FF6050E92110F09200383F6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050E52110F07B00383F6C /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF6050EA2110F09900383F6C /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050E72110F08700383F6C /* PetController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FF6050EB2110F0A700383F6C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050E12110F03400383F6C /* PetsTableViewController.swift */,
+				FF6050E32110F06F00383F6C /* PetsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FF6050EC2110F0B500383F6C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FF6050D32110EFB000383F6C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF6050CB2110EFB000383F6C /* Pets2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6050DE2110EFB000383F6C /* Build configuration list for PBXNativeTarget "Pets2" */;
+			buildPhases = (
+				FF6050C82110EFB000383F6C /* Sources */,
+				FF6050C92110EFB000383F6C /* Frameworks */,
+				FF6050CA2110EFB000383F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pets2;
+			productName = Pets2;
+			productReference = FF6050CC2110EFB000383F6C /* Pets2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF6050C42110EFB000383F6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lisa Sampson";
+				TargetAttributes = {
+					FF6050CB2110EFB000383F6C = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = FF6050C72110EFB000383F6C /* Build configuration list for PBXProject "Pets2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF6050C32110EFB000383F6C;
+			productRefGroup = FF6050CD2110EFB000383F6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF6050CB2110EFB000383F6C /* Pets2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF6050CA2110EFB000383F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6050DA2110EFB000383F6C /* LaunchScreen.storyboard in Resources */,
+				FF6050D72110EFB000383F6C /* Assets.xcassets in Resources */,
+				FF6050D52110EFB000383F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF6050C82110EFB000383F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6050D02110EFB000383F6C /* AppDelegate.swift in Sources */,
+				FF6050E62110F07B00383F6C /* Pet.swift in Sources */,
+				FF6050E42110F06F00383F6C /* PetsViewController.swift in Sources */,
+				FF6050E22110F03400383F6C /* PetsTableViewController.swift in Sources */,
+				FF6050E82110F08700383F6C /* PetController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF6050D32110EFB000383F6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6050D42110EFB000383F6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF6050D82110EFB000383F6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6050D92110EFB000383F6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF6050DC2110EFB000383F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF6050DD2110EFB000383F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF6050DF2110EFB000383F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pets2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisasampson.Pets2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF6050E02110EFB000383F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pets2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisasampson.Pets2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF6050C72110EFB000383F6C /* Build configuration list for PBXProject "Pets2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6050DC2110EFB000383F6C /* Debug */,
+				FF6050DD2110EFB000383F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF6050DE2110EFB000383F6C /* Build configuration list for PBXNativeTarget "Pets2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6050DF2110EFB000383F6C /* Debug */,
+				FF6050E02110EFB000383F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF6050C42110EFB000383F6C /* Project object */;
+}
