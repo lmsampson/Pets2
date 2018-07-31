@@ -48,6 +48,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorite Pets" id="uhl-NE-il2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FJX-Q2-2WP">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="Txo-jB-biI" kind="show" identifier="AddPetSegue" id="JFb-y5-UYF"/>
                             </connections>
@@ -97,6 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="Tof-gC-wvc">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3XW-zB-2Tf">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="saveButtonWasTapped:" destination="Txo-jB-biI" id="dSQ-YP-gpC"/>
                             </connections>
